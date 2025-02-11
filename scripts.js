@@ -24,13 +24,14 @@ function moveNoButton() {
         const image = document.querySelector('.image-container img');
         image.src = 'images/dudu-tears.gif';
     }
+}
 
-    yesButton.addEventListener('click', () => {
-        const image = document.querySelector('.image-container img');
-        image.src = 'images/bubu-dudu-kiss.gif';
-        document.querySelector('.buttons').remove();
-        const message = document.createElement('h2');
-        message.textContent = '"Yay! You’re my Valentine! 💖 I’d say you have great taste, but I already knew that lol. Thanks for putting up with my annoying butt! 🍑💕✨"';
-        document.body.appendChild(message);
-    });
-} 
+const yesButton = document.querySelector('.yes-button');
+yesButton.addEventListener('click', () => {
+    const image = document.querySelector('.image-container img');
+    image.src = 'images/bubu-dudu-kiss.gif';
+    document.querySelector('.buttons').remove();
+    const message = document.createElement('h2');
+    message.textContent = '"Yay! You’re my Valentine! 💖 I’d say you have great taste, but I already knew that lol. Thanks for putting up with my annoying butt! 🍑💕✨"';
+    document.body.appendChild(message);
+});
